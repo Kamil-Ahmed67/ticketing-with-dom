@@ -34,7 +34,7 @@
             </div>
             <div class="border-b-2 border-dashed my-4"></div>
             <div class="flex justify-between items-center">
-                <p><i class="fa-solid fa-couch"></i><span>Available</span></p>
+                <p><i class="fa-solid fa-couch"></i><span>Available: <span id="available-seat">40</span></span></p>
                 <p><i class="fa-solid fa-couch text-[#1DD100]"></i><span>Selected</span></p>
             </div>
             <div class="border-b-2 border-dashed my-4"></div>
@@ -190,33 +190,33 @@
                         <h3 class="flex justify-between">
                             <p class="flex">
                                 <span>Seat</span>
-                                <span class="bg-green-500 w-4 h-4 p-2 text-white flex justify-center items-center rounded-full text-sm">0</span>
+                                <span id="total-booked" class="bg-green-500 w-4 h-4 p-2 text-white flex justify-center items-center rounded-full text-sm">0</span>
                             </p>
                             <p>Class</p>
                             <p>Price</p>
                         </h3>
                         <div class="border-b-2 my-4 border-dashed"></div>
                         <ul id="selected-seat" class="space-y-5">
-                            <h3 class="text-3xl font-semibold text-error capitalize text-center  ">No Seat Booked</h3>
+                            <h3 id="default-text" class="text-3xl font-semibold text-error capitalize text-center  ">No Seat Booked</h3>
                         </ul>
                         <div class="border-b-2 my-4 border-dashed"></div>
                         <div class="text-lg font-semibold flex justify-between">
                             <p>Total Price</p>
                             <p>
                                 <span>BDT:</span>
-                                <span>****</span>
+                                <span id="total-price">****</span>
                             </p>
                         </div>
                         <div class="border-b-2 my-4 border-dashed"></div>
                         <div class="flex justify-between items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold">
-                            <input type="text" name=""disabled class="input my-5 w-full input-primary border-primary" id="" placeholder="Have a coupon?">
-                            <button class="btn-primary"disabled>Apply</button>
+                            <input  id="coupon-field" type="text" name=""disabled class="input my-5 w-full input-primary border-primary" id="" placeholder="Have a coupon?">
+                            <button id="coupon-btn" class="btn btn-primary"disabled>Apply</button>
                         </div>
                         <div class="text-lg font-semibold flex justify-between">
                             <p>Grand Price</p>
                             <p>
                                 <span>BDT:</span>
-                                <span>****</span>
+                                <span id="grand-total">****</span>
                             </p>
                         </div>
                     </div>
